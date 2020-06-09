@@ -10,4 +10,10 @@ describe 'A Tic Tac Toe board' do
     expect(Board.new).to respond_to(:locations)
   end
 
+  it 'can be created with specific locations' do
+    fake_locations = 'FAKE'
+    board = Board.new(fake_locations)
+    expect(board.locations).to eq('FAKE')
+  end
+
 end
