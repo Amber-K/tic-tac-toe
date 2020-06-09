@@ -5,4 +5,7 @@ class Game
   def initialize(board = {})
     @board = board
   end
+  def over?
+    false
+  end
 end
